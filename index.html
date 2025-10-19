@@ -20,7 +20,7 @@
     <div class="max-w-7xl mx-auto">
         <!-- Header -->
         <div class="text-center mb-8">
-            <h1 class="text-4xl font-bold text-white mb-4 gradient-text">DevTaskManager</h1>
+            <h1 class="text-4xl font-bold text-white mb-4">DevTaskManager</h1>
         </div>
 
         <!-- Contatori -->
@@ -44,7 +44,7 @@
         </div>
 
         <!-- Form -->
-        <form class="bg-white rounded-2xl shadow-lg p-6 mb-8 glass-effect">
+        <form class="bg-white rounded-2xl shadow-lg p-6 mb-8">
             <div class="flex flex-col sm:flex-row gap-4 items-center">
                 <button type="submit" id="btnTask" 
                         class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center gap-2 min-w-[140px] justify-center">
@@ -62,8 +62,8 @@
         <!-- Board -->
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
             <!-- Backlog Column -->
-            <div class="column-backlog bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div class="column-header text-white px-6 py-4">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden column-backlog">
+                <div class="bg-gray-700 text-white px-6 py-4 column-header">
                     <h2 class="text-xl font-bold">Backlog</h2>
                 </div>
                 <div class="p-4 min-h-[500px] custom-scrollbar overflow-y-auto max-h-[500px]">
@@ -74,8 +74,8 @@
             </div>
 
             <!-- In Progress Column -->
-            <div class="column-inprogress bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div class="column-header text-white px-6 py-4">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden column-inprogress">
+                <div class="bg-blue-600 text-white px-6 py-4 column-header">
                     <h2 class="text-xl font-bold">In Progress</h2>
                 </div>
                 <div class="p-4 min-h-[500px] custom-scrollbar overflow-y-auto max-h-[500px]">
@@ -86,8 +86,8 @@
             </div>
 
             <!-- Review Column -->
-            <div class="column-review bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div class="column-header text-white px-6 py-4">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden column-review">
+                <div class="bg-yellow-600 text-white px-6 py-4 column-header">
                     <h2 class="text-xl font-bold">Review</h2>
                 </div>
                 <div class="p-4 min-h-[500px] custom-scrollbar overflow-y-auto max-h-[500px]">
@@ -98,8 +98,8 @@
             </div>
 
             <!-- Done Column -->
-            <div class="column-done bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div class="column-header text-white px-6 py-4">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden column-done">
+                <div class="bg-green-600 text-white px-6 py-4 column-header">
                     <h2 class="text-xl font-bold">Done</h2>
                 </div>
                 <div class="p-4 min-h-[500px] custom-scrollbar overflow-y-auto max-h-[500px]">
